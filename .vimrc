@@ -4,6 +4,7 @@ filetype off                  " required
 set hlsearch
 syntax on
 
+set autoindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -34,7 +35,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'wincent/command-t'
+" Don't need command-t if we have ctrl-p
+"Plugin 'wincent/command-t'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
@@ -79,6 +81,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-obsession'
 Plugin 'rodjek/vim-puppet'
 Plugin 'vim-ruby/vim-ruby'
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
