@@ -7,8 +7,9 @@ I keep minimal config in this repository, just enough to configure the tools and
 The below sections include anything necessary over and above `vcsh dotfiles-vcsh pull`, in order to get to my desired
 environment.
 
-## tmux
-### tpm
+## Packages
+### tmux
+#### tpm
 
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
@@ -17,7 +18,7 @@ environment.
 
 [Full tmux installation docs](https://github.com/tmux-plugins/tpm)
 
-### powerline-daemon
+#### powerline-daemon
 My config attempts to use [powerline](https://github.com/powerline/powerline), or more accurately [powerline-daemon](https://github.com/kovidgoyal/powerline-daemon),
 but reverts gracefully if powerline-daemon isn't present.
 
@@ -28,12 +29,12 @@ but reverts gracefully if powerline-daemon isn't present.
     mv PowerlineSymbols.otf ~/.fonts/
     fc-cache -vf ~/.fonts/
     mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
-    
+
 In my experience, it is then necessary to restart the terminal emulator. Starting `tmux` should then display a pretty
 and useful powerline at the bottom of the window.
 
 [Full powerline-daemon installation docs](https://powerline.readthedocs.io/en/master/installation.html)
 
-## vim
+### vim
 TODO - forgot to edit this last time I set up vim on a machine. Probably includes installing vundle and doing an install
 plugins run.
