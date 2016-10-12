@@ -1,13 +1,32 @@
 # dotfiles-vcsh
 ## General
-To sync dotfiles between machines, I use [vcsh](https://github.com/RichiH/vcsh). As many tools use their own plugin 
+To sync dotfiles between machines, I use [vcsh](https://github.com/RichiH/vcsh). As many tools use their own plugin
 managers, e.g. vim's [vundle](https://github.com/VundleVim/Vundle.vim) and tmux's [tpm](https://github.com/tmux-plugins/tpm),
 I keep minimal config in this repository, just enough to configure the tools and the plugin managers enough to do their job.
 
 The below sections include anything necessary over and above `vcsh dotfiles-vcsh pull`, in order to get to my desired
-environment.
+environment. In the event that a dependency doesn't exist, I hope that the
+config is as resilient as possible, but there are no guarantees.
 
-## Packages
+## Tools and dependencies
+### bash
+#### bash-git-prompt
+As seen [here](https://github.com/magicmonty/bash-git-prompt). A heavy but great prompt.
+
+    git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+
+#### thefuck
+As seen [here](https://github.com/nvbn/thefuck).
+
+    pip install --user thefuck
+
+#### virtualenvwrapper
+As seen [here](https://virtualenvwrapper.readthedocs.io). I rarely use it these
+days, most of my python packages are installed with `pip install --user`, but
+for now it remains.
+
+    pip install --user virtualenvwrapper
+
 ### tmux
 #### tpm
 
@@ -36,5 +55,5 @@ and useful powerline at the bottom of the window.
 [Full powerline-daemon installation docs](https://powerline.readthedocs.io/en/master/installation.html)
 
 ### vim
-TODO - forgot to edit this last time I set up vim on a machine. Probably includes installing vundle and doing an install
-plugins run.
+TODO - forgot to edit this last time I set up vim on a machine. Probably
+includes installing vundle and doing a install plugins run.
