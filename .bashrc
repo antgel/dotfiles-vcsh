@@ -150,6 +150,11 @@ export DEB_BUILD_OPTIONS=parallel=8
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### npm local modules
+if command -v npm >/dev/null 2>&1; then
+    PATH=$(npm bin):$PATH
+fi
+
 ### ruby stuff
 # rjb gem needs this
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
