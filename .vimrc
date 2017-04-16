@@ -73,7 +73,7 @@ Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
 Plugin 'ntpeters/vim-better-whitespace'
-autocmd BufWritePre * StripWhitespace			\
+autocmd BufEnter * EnableStripWhitespaceOnSave
 
 Plugin 'altercation/vim-colors-solarized'
 
