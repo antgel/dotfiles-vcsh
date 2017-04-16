@@ -40,15 +40,14 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Don't need command-t if we have ctrl-p
 "Plugin 'wincent/command-t'
 
-Plugin 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" Session management
+Plugin 'tpope/vim-obsession'
 
+" Search improvements
 Plugin 'haya14busa/incsearch.vim'
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-
 let g:incsearch#auto_nohlsearch = 1
 map n  <Plug>(incsearch-nohl-n)
 map N  <Plug>(incsearch-nohl-N)
@@ -57,32 +56,46 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
+" IDE-style completion
+Plugin 'Valloric/YouCompleteMe'
+
+" Tags
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
+nmap <F8> :TagbarToggle<CR>
+
+" Fuzzy file, buffer, mru, tag, etc finder
+Plugin 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Syntax checking
 Plugin 'scrooloose/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-Plugin 'godlygeek/tabular'
-
-Plugin 'majutsushi/tagbar'
-nmap <F8> :TagbarToggle<CR>
-
+" Cleanliness, aesthetics
 Plugin 'ntpeters/vim-better-whitespace'
 autocmd BufEnter * EnableStripWhitespaceOnSave
-
+Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+" Language-specific
+" Python
 Plugin 'nvie/vim-flake8'
-Plugin 'tpope/vim-obsession'
+Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
+let g:SimpylFold_docstring_preview = 1
+" Enable folding with the spacebar
+nnoremap <space> za
+" Puppet
 Plugin 'rodjek/vim-puppet'
-Plugin 'Valloric/YouCompleteMe'
+" Ruby
 Plugin 'vim-ruby/vim-ruby'
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 
