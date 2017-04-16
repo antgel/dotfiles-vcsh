@@ -82,6 +82,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-obsession'
 Plugin 'rodjek/vim-puppet'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-ruby/vim-ruby'
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 
