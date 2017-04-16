@@ -58,6 +58,8 @@ map g# <Plug>(incsearch-nohl-g#)
 
 " IDE-style completion
 Plugin 'Valloric/YouCompleteMe'
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Tags
 Plugin 'xolox/vim-misc'
@@ -116,3 +118,5 @@ filetype plugin indent on    " required
 
 set background=dark
 colorscheme solarized
+" Run a Python 3 script by hitting F9
+autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python3' shellescape(@%, 1)<cr>
