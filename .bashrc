@@ -150,6 +150,9 @@ export DEB_BUILD_OPTIONS=parallel=8
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Meteor
+export PATH="$HOME/.meteor:$PATH"
+
 ### npm local modules
 if command -v npm >/dev/null 2>&1; then
     PATH=$(npm bin):$PATH
