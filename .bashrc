@@ -116,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Set readline to vi mode
+set -o vi
+
 ### git prompt configuration
 # From https://github.com/magicmonty/bash-git-prompt
 
