@@ -165,6 +165,10 @@ fi
 # rjb gem needs this
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
 
+### SDKMAN! for Groovy
+export SDKMAN_DIR="/home/antony/.sdkman"
+[[ -s "/home/antony/.sdkman/bin/sdkman-init.sh" ]] && source "/home/antony/.sdkman/bin/sdkman-init.sh"
+
 ### thefuck
 if command -v thefuck >/dev/null 2>&1; then
     eval $(thefuck --alias)
@@ -182,3 +186,4 @@ fi
 if [ -f ~/.bash_private ]; then
     . ~/.bash_private
 fi
+
