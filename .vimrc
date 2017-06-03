@@ -89,6 +89,10 @@ Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 
 " Language-specific
+
+" Markdown
+autocmd FileType markdown setlocal textwidth=72
+
 " Python
 Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
