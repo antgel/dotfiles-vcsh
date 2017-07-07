@@ -1,3 +1,7 @@
+alias gco='git commit'
 alias gg='git grep'
 alias gpr='git pull --rebase'
 alias gpfwl='git push --force-with-lease'
+alias gst='git status'
+alias jb='bundle exec jekyll build'
+alias jbp='JEKYLL_ENV=production bundle exec jekyll build'
