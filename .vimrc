@@ -10,6 +10,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set textwidth=72
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -89,9 +90,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 
 " Language-specific
-
-" Markdown
-autocmd FileType markdown setlocal textwidth=72
 
 " Python
 Plugin 'nvie/vim-flake8'
