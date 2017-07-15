@@ -7,10 +7,6 @@ syntax on
 set autoindent
 set mouse=a
 set number
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set textwidth=72
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -40,6 +36,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Don't need command-t if we have ctrl-p
 "Plugin 'wincent/command-t'
+
+" Use EditorConfig
+Plugin 'editorconfig/editorconfig-vim'
 
 " Session management
 Plugin 'tpope/vim-obsession'
@@ -104,7 +103,6 @@ let g:syntastic_python_python_exec = 'python3'
 Plugin 'rodjek/vim-puppet'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
