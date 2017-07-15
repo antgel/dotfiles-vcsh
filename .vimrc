@@ -84,7 +84,6 @@ let g:syntastic_check_on_wq = 0
 
 " Cleanliness, aesthetics
 Plugin 'ntpeters/vim-better-whitespace'
-autocmd BufEnter * EnableStripWhitespaceOnSave
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 
