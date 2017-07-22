@@ -1,0 +1,4 @@
+git_recurse true
+ignore_front_matter true
+rules "~MD026"
+show_kramdown_warnings true
