@@ -5,6 +5,7 @@ set hlsearch
 syntax on
 
 set autoindent
+set cursorline
 set mouse=a
 set number
 
