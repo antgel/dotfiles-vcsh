@@ -119,6 +119,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" http://www.bestofvim.com/tip/leave-ex-mode-good/
+nnoremap Q <nop>
+
 set background=dark
 colorscheme solarized
 " Run a Python 3 script by hitting F9
