@@ -89,6 +89,8 @@ Plugin 'altercation/vim-colors-solarized'
 
 " Language-specific
 
+" AngularJS
+ Plugin 'burnettk/vim-angular'
 " Python
 Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
