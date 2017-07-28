@@ -103,6 +103,8 @@ let g:syntastic_python_python_exec = 'python3'
 Plugin 'rodjek/vim-puppet'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
+" TypeScript
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
