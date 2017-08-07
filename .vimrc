@@ -129,5 +129,11 @@ nnoremap Q <nop>
 
 set background=dark
 colorscheme solarized
+
+" http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " Run a Python 3 script by hitting F9
 autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python3' shellescape(@%, 1)<cr>
