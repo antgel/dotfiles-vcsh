@@ -43,6 +43,25 @@ Plugin 'editorconfig/editorconfig-vim'
 " Session management
 Plugin 'tpope/vim-obsession'
 
+" Powerful commenting
+Plugin 'scrooloose/nerdcommenter'
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following
+" code indentation
+" let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+" let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+" let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" Allow commenting and inverting empty lines (useful when commenting a
+" region)
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+" let g:NERDTrimTrailingWhitespace = 1
+
 " Search improvements
 Plugin 'haya14busa/incsearch.vim'
 map /  <Plug>(incsearch-forward)
@@ -134,6 +153,8 @@ colorscheme solarized
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+
+set showcmd
 
 " Run a Python 3 script by hitting F9
 autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python3' shellescape(@%, 1)<cr>
