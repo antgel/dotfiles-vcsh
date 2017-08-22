@@ -101,6 +101,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"Faster folding
+Plugin 'Konfekt/FastFold'
+nmap zuz <Plug>(FastFoldUpdate)
+let g:fastfold_savehook = 1
+let g:fastfold_fold_command_suffixes = ['x','X','a','A','o','O','c','C']
+let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
+
 " Cleanliness, aesthetics
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
