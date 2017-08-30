@@ -14,7 +14,7 @@ max_line_length = 72
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{json,rb,yml}]
+[*.{json,rb,tf,yml}]
 indent_size = 2
 
 # Tab indentation (no size specified)
