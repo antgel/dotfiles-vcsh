@@ -7,3 +7,5 @@ alias jb='bundle exec jekyll build'
 alias jbp='JEKYLL_ENV=production bundle exec jekyll build'
 alias pua='pip freeze --user | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --user -U'
 alias vdv='vcsh dotfiles-vcsh'
+# wget mirror
+alias wm='wget --recursive --no-parent --page-requisites --convert-links'
