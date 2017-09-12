@@ -130,6 +130,8 @@ let g:syntastic_python_python_exec = 'python3'
 Plugin 'rodjek/vim-puppet'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
+" Terraform
+Plugin 'hashivim/vim-terraform'
 " TypeScript
 Plugin 'leafgarland/typescript-vim'
 
