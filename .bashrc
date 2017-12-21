@@ -147,37 +147,39 @@ export PATH="/usr/lib/ccache:$PATH" # ccache
 export PATH="$HOME/.local/bin:$PATH" # pip install --local uses this
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
-### Debian bits
+# Debian bits
 export DEB_BUILD_OPTIONS=parallel=8
 
-### Added by the Heroku Toolbelt
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # locate that works in encrypted $HOME
 export LOCATE_PATH="$HOME/mlocate.db"
 
-### Meteor
+# Meteor
 export PATH="$HOME/.meteor:$PATH"
 
-### npm local modules
+# npm local modules
+# FIXME: Doesn't really work because modules are installed wherever
+# npm install is run from. Find a better solution.
 if command -v npm >/dev/null 2>&1; then
     PATH=$(npm bin):$PATH
 fi
 
-### ruby stuff
+# ruby stuff
 # rjb gem needs this
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
 
-### SDKMAN! for Groovy
+# SDKMAN! for Groovy
 export SDKMAN_DIR="/home/antony/.sdkman"
 [[ -s "/home/antony/.sdkman/bin/sdkman-init.sh" ]] && source "/home/antony/.sdkman/bin/sdkman-init.sh"
 
-### thefuck
+# thefuck
 if command -v thefuck >/dev/null 2>&1; then
     eval $(thefuck --alias)
 fi
 
-### virtualenvwrapper
+# virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 # Why do the docs define $PROJECT_HOME? Never used in anything I've done
 export PROJECT_HOME=$HOME/Devel
