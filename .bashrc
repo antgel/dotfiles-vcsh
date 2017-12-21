@@ -153,6 +153,9 @@ export DEB_BUILD_OPTIONS=parallel=8
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# locate that works in encrypted $HOME
+export LOCATE_PATH="$HOME/mlocate.db"
+
 ### Meteor
 export PATH="$HOME/.meteor:$PATH"
 
