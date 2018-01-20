@@ -112,6 +112,8 @@ let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'JamshedVesuna/vim-markdown-preview'
+let vim_markdown_preview_hotkey='<C-m>'
 
 " Language-specific
 
