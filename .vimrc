@@ -100,6 +100,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_python_checkers=['flake8']
 
 "Faster folding
 Plugin 'Konfekt/FastFold'
@@ -120,7 +122,6 @@ let vim_markdown_preview_hotkey='<C-m>'
 " AngularJS
  Plugin 'burnettk/vim-angular'
 " Python
-Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
 let g:SimpylFold_docstring_preview = 1
 " Enable folding with the spacebar
