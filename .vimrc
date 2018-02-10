@@ -121,6 +121,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 Plugin 'vim-airline/vim-airline-themes'
 
+" General coding
+Plugin 'tpope/vim-surround'
+
 " Language-specific
 
 " AngularJS
