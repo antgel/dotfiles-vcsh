@@ -116,6 +116,10 @@ Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 let vim_markdown_preview_hotkey='<C-m>'
+Plugin 'vim-airline/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Language-specific
 
