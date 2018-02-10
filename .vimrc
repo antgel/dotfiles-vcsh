@@ -126,9 +126,8 @@ Plugin 'tpope/vim-surround'
 
 " Language-specific
 
-" AngularJS
- Plugin 'burnettk/vim-angular'
-" Python
+Plugin 'burnettk/vim-angular'
+Plugin 'pangloss/vim-javascript'
 Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
 let g:SimpylFold_docstring_preview = 1
 " Enable folding with the spacebar
@@ -136,13 +135,9 @@ nnoremap <space> za
 " Per https://github.com/vim-syntastic/syntastic/issues/283, explicitly
 " set syntax checking with python3
 let g:syntastic_python_python_exec = 'python3'
-" Puppet
 Plugin 'rodjek/vim-puppet'
-" Ruby
 Plugin 'vim-ruby/vim-ruby'
-" Terraform
 Plugin 'hashivim/vim-terraform'
-" TypeScript
 Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
