@@ -1,3 +1,4 @@
+alias cycm='~/.vim/bundle/YouCompleteMe/install.sh'
 alias gco='git commit'
 alias gg='git grep'
 alias gpr='git pull --rebase'
