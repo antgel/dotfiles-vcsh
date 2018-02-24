@@ -159,6 +159,10 @@ export LOCATE_PATH="$HOME/mlocate.db"
 # Meteor
 export PATH="$HOME/.meteor:$PATH"
 
+# Go
+export GOPATH="$HOME/gopath"
+export PATH="$GOPATH:$GOPATH/bin:$PATH"
+
 # npm local modules, from
 # https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
 export NPM_PACKAGES="${HOME}/.npm-packages"
@@ -180,7 +184,7 @@ export SDKMAN_DIR="/home/antony/.sdkman"
 
 # thefuck
 if command -v thefuck >/dev/null 2>&1; then
-    eval $(thefuck --alias)
+    eval "$(thefuck --alias)"
 fi
 
 # virtualenvwrapper
