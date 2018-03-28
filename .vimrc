@@ -212,6 +212,9 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
+" Recognize Jenkinsfile as Groovy
+au BufNewFile,BufRead Jenkinsfile setf groovy
+
 set showcmd
 
 " Run a Python 3 script by hitting F9
