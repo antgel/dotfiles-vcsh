@@ -94,9 +94,12 @@ let g:ctrlp_cmd = 'CtrlP'
 " https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|node_modules)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
+
+" Default is 'only' 10000
+let g:ctrlp_max_files = 100000
 
 " Use the nearest .git directory as the cwd
 " This makes a lot of sense if you are working on a project that is in version
