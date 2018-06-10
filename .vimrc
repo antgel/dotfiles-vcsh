@@ -166,6 +166,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 Plugin 'vim-airline/vim-airline-themes'
 
 " General coding
+Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 
 " Language-specific
