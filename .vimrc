@@ -185,6 +185,7 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'hashivim/vim-terraform'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'posva/vim-vue'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
