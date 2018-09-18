@@ -154,7 +154,9 @@ export DEB_BUILD_OPTIONS=parallel=8
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # locate that works in encrypted $HOME
-export LOCATE_PATH="$HOME/mlocate.db"
+if [ -f "$HOME/mlocate.db" ]; then
+    export LOCATE_PATH="$HOME/mlocate.db"
+fi
 
 # Meteor
 export PATH="$HOME/.meteor:$PATH"
