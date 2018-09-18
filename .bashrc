@@ -176,7 +176,7 @@ export NODE_PATH="${HOME}/.npm-packages/lib/node_modules"
 
 # ruby stuff
 # rjb gem needs this
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 
 # SDKMAN! for Groovy
 export SDKMAN_DIR="/home/antony/.sdkman"
