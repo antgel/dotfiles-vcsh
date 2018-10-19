@@ -174,6 +174,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'burnettk/vim-angular'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_frontmatter = 1
 Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
 let g:SimpylFold_docstring_preview = 1
 " Enable folding with the spacebar
