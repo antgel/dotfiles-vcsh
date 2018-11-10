@@ -94,7 +94,7 @@ let g:ctrlp_cmd = 'CtrlP'
 " https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site|node_modules)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|_site|node_modules)$',
   \ 'file': '\v\.(exe|so|dll|class|png|jpg|jpeg)$',
 \}
 
