@@ -171,6 +171,7 @@ Plugin 'tpope/vim-surround'
 
 " Language-specific
 
+Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'burnettk/vim-angular'
 Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
