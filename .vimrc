@@ -174,6 +174,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'burnettk/vim-angular'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_frontmatter = 1
 Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
