@@ -6,7 +6,9 @@ set hlsearch
 set autoindent
 set cursorline
 set mouse=a
-set number
+" turn hybrid line numbers on
+set number relativenumber
+set nu rnu
 let mapleader=" "
 
 " set the runtime path to include Vundle and initialize
