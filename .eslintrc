@@ -1,9 +1,0 @@
-{
-  "parserOptions": {
-    "ecmaVersion": 2017
-  },
-  "plugins": [
-    "protractor"
-  ],
-  "extends": "plugin:protractor/recommended"
-}
