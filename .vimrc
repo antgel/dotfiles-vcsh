@@ -179,10 +179,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_frontmatter = 1
-Plugin 'tmhedberg/SimpylFold' " No-BS Python code folding
-let g:SimpylFold_docstring_preview = 1
-" Enable folding with the spacebar
-" nnoremap <space> za
 " Per https://github.com/vim-syntastic/syntastic/issues/283, explicitly
 " set syntax checking with python3
 let g:syntastic_python_python_exec = 'python3'
