@@ -150,6 +150,9 @@ export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 # Debian bits
 export DEB_BUILD_OPTIONS=parallel=8
 
+# Elastic Beanstalk CLI
+export PATH="/home/antony/.ebcli-virtual-env/executables:$PATH"
+
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
