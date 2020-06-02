@@ -5,6 +5,7 @@ set hlsearch
 
 set autoindent
 set cursorline
+set encoding=utf-8
 set mouse=a
 " turn hybrid line numbers on
 set number relativenumber
