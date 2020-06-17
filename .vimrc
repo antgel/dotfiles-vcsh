@@ -113,6 +113,8 @@ let g:ctrlp_custom_ignore = {
 " Default is 'only' 10000
 let g:ctrlp_max_files = 100000
 
+" Ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 " Use the nearest .git directory as the cwd
 " This makes a lot of sense if you are working on a project that is in version
 " control. It also supports works with .svn, .hg, .bzr.
