@@ -168,7 +168,6 @@ let g:fastfold_fold_command_suffixes = ['x','X','a','A','o','O','c','C']
 let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
 
 " Cleanliness, aesthetics
-Plugin 'yuttie/comfortable-motion.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
