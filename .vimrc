@@ -201,6 +201,14 @@ Plugin 'hashivim/vim-terraform'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'posva/vim-vue'
 
+" General writing
+Plugin 'reedes/vim-pencil'
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
