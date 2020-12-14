@@ -173,6 +173,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_pandoc=1
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
@@ -197,11 +198,15 @@ let g:vim_markdown_frontmatter = 1
 let g:syntastic_python_python_exec = 'python3'
 Plugin 'rodjek/vim-puppet'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'AndrewRadev/tagalong.vim'
 Plugin 'hashivim/vim-terraform'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'posva/vim-vue'
 
 " General writing
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+let g:limelight_conceal_ctermfg = 'gray'
 Plugin 'reedes/vim-pencil'
 augroup pencil
   autocmd!
