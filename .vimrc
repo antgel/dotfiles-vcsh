@@ -183,6 +183,7 @@ Plugin 'tmux-plugins/vim-tmux-focus-events'
 
 " General coding
 Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 
 " Language-specific
