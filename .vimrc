@@ -188,21 +188,13 @@ Plugin 'tpope/vim-surround'
 
 " Language-specific
 
-Plugin 'OmniSharp/omnisharp-vim'
-Plugin 'burnettk/vim-angular'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'sheerun/vim-polyglot'
 let g:vim_markdown_frontmatter = 1
 " Per https://github.com/vim-syntastic/syntastic/issues/283, explicitly
 " set syntax checking with python3
 let g:syntastic_python_python_exec = 'python3'
-Plugin 'rodjek/vim-puppet'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'AndrewRadev/tagalong.vim'
-Plugin 'hashivim/vim-terraform'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'posva/vim-vue'
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'burnettk/vim-angular'
 
 " General writing
 Plugin 'junegunn/goyo.vim'
