@@ -170,7 +170,7 @@ let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
 " Cleanliness, aesthetics
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'godlygeek/tabular'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_pandoc=1
@@ -227,8 +227,12 @@ syntax on
 " http://www.bestofvim.com/tip/leave-ex-mode-good/
 nnoremap Q <nop>
 
-set background=dark
-colorscheme solarized
+" Thanks to https://github.com/vim/vim/issues/993#issuecomment-255651605
+" set Vim-specific sequences for RGB colors
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+autocmd vimenter * ++nested colorscheme solarized8_high
 
 " http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
 nnoremap <F2> :set invpaste paste?<CR>
