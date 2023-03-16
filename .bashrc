@@ -145,7 +145,6 @@ export PATH="$ANDROID_HOME/tools:$PATH"
 
 export PATH="/usr/lib/ccache:$PATH" # ccache
 export PATH="$HOME/.local/bin:$PATH" # pip install --local uses this
-export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 # Debian bits
 export DEB_BUILD_OPTIONS=parallel=8
@@ -205,3 +204,5 @@ if [ -f ~/.bash_private ]; then
     . ~/.bash_private
 fi
 
+# rbenv installed at system level by apt install rbenv
+eval "$(rbenv init -)"
