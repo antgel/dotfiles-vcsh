@@ -194,7 +194,7 @@ let g:vim_markdown_frontmatter = 1
 " set syntax checking with python3
 let g:syntastic_python_python_exec = 'python3'
 Plugin 'OmniSharp/omnisharp-vim'
-Plugin 'glench/vim-jinja2-syntax'
+Plugin 'lepture/vim-jinja'
 
 " General writing
 Plugin 'junegunn/goyo.vim'
