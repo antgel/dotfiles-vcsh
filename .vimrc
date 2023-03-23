@@ -206,7 +206,16 @@ augroup pencil
   autocmd FileType markdown,mkd call pencil#init()
   autocmd FileType text         call pencil#init()
 augroup END
-autocmd FileType markdown setlocal spell
+Plugin 'preservim/vim-lexical'
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd call lexical#init()
+augroup END
+Plugin 'preservim/vim-litecorrect'
+augroup litecorrect
+  autocmd!
+  autocmd FileType markdown,mkd call litecorrect#init()
+augroup END
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
