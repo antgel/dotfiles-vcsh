@@ -4,6 +4,7 @@ filetype off                  " required
 set hlsearch
 
 set autoindent
+set smartindent
 set cursorline
 set encoding=utf-8
 set mouse=a
@@ -174,6 +175,7 @@ Plugin 'lifepillar/vim-solarized8'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_pandoc=1
+Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
