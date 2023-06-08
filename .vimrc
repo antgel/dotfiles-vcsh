@@ -187,6 +187,7 @@ Plugin 'tmux-plugins/vim-tmux-focus-events'
 Plugin 'andymass/vim-matchup'
 let g:matchup_matchparen_offscreen = {'method': 'popup'}
 Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 
