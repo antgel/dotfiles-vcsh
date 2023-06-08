@@ -184,6 +184,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tmux-plugins/vim-tmux-focus-events'
 
 " General coding
+Plugin 'andymass/vim-matchup'
+let g:matchup_matchparen_offscreen = {'method': 'popup'}
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
