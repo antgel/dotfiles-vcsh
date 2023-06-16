@@ -16,3 +16,7 @@ alias wcf=' watch -n 0.3 cat /sys/devices/system/cpu/cpu{0..3}/cpufreq/scaling_c
 alias wh='whois -H'
 # wget mirror
 alias wm='wget --recursive --no-parent --page-requisites --convert-links'
+# YouTube download audio
+alias ytda='yt-dlp -x'
+
+function gam() { "/home/antony/bin/gam/gam" "$@" ; }
