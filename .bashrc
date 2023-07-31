@@ -186,6 +186,11 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 export SDKMAN_DIR="/home/antony/.sdkman"
 [[ -s "/home/antony/.sdkman/bin/sdkman-init.sh" ]] && source "/home/antony/.sdkman/bin/sdkman-init.sh"
 
+# Terragrunt
+# Don't take up so much disk space by duplicating unnecessarily
+export TERRAGRUNT_DOWNLOAD="$HOME/.cache/terragrunt"
+export TF_PLUGIN_CACHE_DIR="$TERRAGRUNT_DOWNLOAD/.plugins"
+
 # thefuck
 if command -v thefuck >/dev/null 2>&1; then
     eval "$(thefuck --alias)"
