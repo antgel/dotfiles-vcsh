@@ -152,6 +152,10 @@ export DEB_BUILD_OPTIONS=parallel=8
 # Elastic Beanstalk CLI
 export PATH="/home/antony/.ebcli-virtual-env/executables:$PATH"
 
+# fly.io
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
