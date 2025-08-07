@@ -144,14 +144,6 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# locate that works in encrypted $HOME
-if [ -f "$HOME/mlocate.db" ]; then
-    export LOCATE_PATH="$HOME/mlocate.db"
-fi
-
-# Meteor
-export PATH="$HOME/.meteor:$PATH"
-
 # Go
 export GOPATH="$HOME/gopath"
 export PATH="$GOPATH:$GOPATH/bin:$PATH"
