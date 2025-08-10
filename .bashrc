@@ -192,3 +192,4 @@ fi
 
 # rbenv installed at system level by apt install rbenv
 eval "$(rbenv init -)"
+. "$HOME/.cargo/env"
