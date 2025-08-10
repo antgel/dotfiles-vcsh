@@ -1,4 +1,5 @@
-alias cycm='~/.vim/bundle/YouCompleteMe/install.sh'
+# Compile YouCompleteMe
+alias cycm='python ~/.vim/bundle/YouCompleteMe/install.py'
 alias gco='git commit'
 alias gcoane='git commit --amend --no-edit'
 alias gdc='git diff --cached'
