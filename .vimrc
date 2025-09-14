@@ -5,6 +5,7 @@ set hlsearch
 
 set autoindent
 set smartindent
+set spelllang=en_gb
 set cursorline
 set encoding=utf-8
 set mouse=a
