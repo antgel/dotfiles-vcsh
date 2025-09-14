@@ -226,7 +226,7 @@ let g:limelight_conceal_ctermfg = 'gray'
 Plugin 'reedes/vim-pencil'
 augroup pencil
   autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
+  " autocmd FileType markdown,mkd call pencil#init()
   autocmd FileType text         call pencil#init()
 augroup END
 Plugin 'preservim/vim-lexical'
