@@ -9,6 +9,7 @@ set spelllang=en_gb
 set cursorline
 set encoding=utf-8
 set mouse=a
+set ttymouse=sgr  " otherwise mouse click trigger VISUAL
 " turn hybrid line numbers on
 set number relativenumber
 set nu rnu
