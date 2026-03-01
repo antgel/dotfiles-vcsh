@@ -172,9 +172,9 @@ export SDKMAN_DIR="/home/antony/.sdkman"
 export TERRAGRUNT_DOWNLOAD="$HOME/.cache/terragrunt"
 export TF_PLUGIN_CACHE_DIR="$TERRAGRUNT_DOWNLOAD/.plugins"
 
-# thefuck
-if command -v thefuck >/dev/null 2>&1; then
-    eval "$(thefuck --alias)"
+# pay-respects
+if command -v pay-respects >/dev/null 2>&1; then
+    eval "$(pay-respects bash)"
 fi
 
 # virtualenvwrapper
